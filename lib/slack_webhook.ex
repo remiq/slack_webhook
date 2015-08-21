@@ -1,5 +1,5 @@
 defmodule SlackWebhook do
-  @docmodule """
+  @moduledoc """
   Sends simple HTTP(S) request to Slack API to display short message on your channel.
   Remember to configure your webhook at config/config.exs:
         config :slack_webhook, :url, "https://hooks.slack.com/services/*/*/*"
