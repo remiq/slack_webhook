@@ -10,7 +10,7 @@ Sends simple messages to Slack channel using webhook API.
 
 2. Add dependency in `mix.exs`.
 
-    {:slack_webhook, "~> 0.0.1"}
+    {:slack_webhook, "~> 0.1"}
 
 3. Add Webhook URL to your application configuration.
 
