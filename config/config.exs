@@ -15,7 +15,9 @@ use Mix.Config
 #       format: "$date $time [$level] $metadata$message\n",
 #       metadata: [:user_id]
 
-config :slack_webhook, :url, "https://hooks.slack.com/services/*/*/*"
+config :slack_webhook, 
+  default_url: "https://hooks.slack.com/services/*/*/*",
+  urls: [name: "https://hooks.slack.com/services/*/*/*"]
 
 # It is also possible to import configuration files, relative to this
 # directory. For example, you can emulate configuration per environment

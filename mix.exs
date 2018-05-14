@@ -4,12 +4,12 @@ defmodule SlackWebhook.Mixfile do
   def project do
     [app: :slack_webhook,
      description: "Sends simple messages to Slack channel using webhook API.",
-     version: "0.1.0",
+     version: "0.2.0",
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     package: package,
-     deps: deps]
+     package: package(),
+     deps: deps()]
   end
 
   # Configuration for the OTP application
@@ -29,9 +29,9 @@ defmodule SlackWebhook.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:httpoison, "~> 0.9"},
-     {:earmark, "~> 0.2.1", only: :dev},
-     {:ex_doc, "~> 0.12.0", only: :dev}]
+    [{:httpoison, "~> 1.1.9"},
+     {:earmark, "~> 1.2", only: :dev},
+     {:ex_doc, "~> 0.18", only: :dev}]
   end
 
   defp package do
