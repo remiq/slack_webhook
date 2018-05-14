@@ -23,10 +23,12 @@ config :slack_webhook,
 4. Send synchronous message.
 ```elixir
 SlackWebhook.send "lorem ipsum"
+SlackWebhook.send "lorem ipsum", "https://hooks.slack.com/services/*/*/*"
 ```
 5. Send asynchronous message.
 ```elixir
 SlackWebhook.async_send "lorem ipsum"
+SlackWebhook.async_send "lorem ipsum", "https://hooks.slack.com/services/*/*/*"
 ```
 ## Sync vs Async
 
